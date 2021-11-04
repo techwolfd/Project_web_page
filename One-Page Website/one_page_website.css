@@ -1,0 +1,8 @@
+h1, p, img, section {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: auto;
+    margin: 50px;
+    border: blueviolet;
+    border-radius: 22px;
+}
