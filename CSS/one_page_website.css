@@ -1,9 +1,8 @@
 input {
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
     width: auto;
-    margin: auto;
+    margin: 10px;
     border: blueviolet;
-    border-radius: 3px;
+    border-radius: 5px;
 }
