@@ -1,0 +1,9 @@
+input {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    width: auto;
+    margin: auto;
+    border: blueviolet;
+    border-radius: 3px;
+}
