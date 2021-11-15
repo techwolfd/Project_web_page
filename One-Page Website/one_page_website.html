@@ -1,87 +1,199 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
-        <title>one page website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>el espacio  v3</title>
+        
+        <script  src="js/onepage_website.js" ></script>
+
         <link rel="stylesheet"  type="text/css" href="css/one_page_website.css">
-        "
+    
     </head>
     <body>
- 
-        <!--p-->
-        <section>
-            <p>etiqueta p</p>
-        </section>
 
-        <!--p-->
+        <!---Navegador-->
+        <div class="vrap">
+            <div class="menu-container">
+                <ul class="menu">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#galeria"><li>galeria</li></a>
+                    <a href="#contacto"><li>contacto</li></a>
+                </ul>
+            </div>
+        </div>
+        <!---fin Navegador-->
 
+        <!---home-->
+        <div id="home">
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main">estacion espacial</span>
+                </div>
+            </div>
 
-        <!--imagenes
-    <p><a href="#formulario"> ir a formulario</a></p>
-    <h1 id="galeria">galeria</h1>
-        
-   <section id="galeria">
-        <img src="img/thumb/thumb_4.jpg" alt="problema con la imaguen 4" width="320" height="240">
-       
-        <img src="img/thumb/thumb_5.jpg" alt="problema con la imaguen 5" width="320" height="240">
+        </div>
+        <!---fin home-->
 
-        fin de imagenes-->           
-    </section>     
-        <!--fin Galeria--> 
+        <!---galeria-->
+        <section id="galeria">
+            <div class="container">
+                <H1>Galeria</H1>
+                <div class="flex-container">
 
-        <!--form-->
-        <br><br><br><br>
-    <p><a href="#video"> ir a video</a></p>
-    <h1 id="formulario">formulario</h1>
-        
-        <section>
-            <p>por favor proporciona tu informacion basica de contacto</p>
+                    <div class="row">
+                        <div class="column">
+                             <img src="img/thumb_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
                         
- 
-              <form action="" method="get">
-              <input class="rsvp" type="text" value="First name">
-              <input class="rsvp" type="text" value="apeido">
-                <input class="rsvp" type="text" value="direccion de correo electronico">
-                <input class="rsvp" type="text" value="Numero telefonico">
-                                
-                <input type="submit" value="Submit">
-           <br><br><br><br>  
-                </form>
- 
-      
-        </section>
-           <!--iframa label--
-        <section>
-    <p><a href="#galeria"> ir a galeia</a></p>
-    <h1 id="video">video</h1>
-        <p>seccion iframe</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FGBhQbmPwH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-        </section>
-                 
+                        
+                        <div class="column">
+                          <img src="img/thumb_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        </div>
 
+                        <div class="column">
+                          <img src="img/thumb_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        </div>
+
+                        <div class="column">
+                          <img src="img/thumb_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                        </div>
+
+                        <div class="column">
+                            <img src="img/thumb_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                          </div>
+
+                          <div class="column">
+                            <img src="img/thumb_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                          </div>
+
+                          <div class="column">
+                            <img src="img/thumb_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                          </div>
+
+                          
+                      </div>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">1 / 7</div>
+                            <img src="img/thumb_1.png" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 7</div>
+                            <img src="img/thumb_2.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 7</div>
+                            <img src="img/thumb_3.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 7</div>
+                            <img src="img/thumb_4.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="img/thumb_5.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">6 / 7</div>
+                            <img src="img/thumb_6.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">7 / 7</div>
+                            <img src="img/thumb_7.jpg" style="width:100%">
+                          </div>
+
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+                      
+                      
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_1.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                          </div>
+
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+                          </div>
+
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+                          </div>
+
+                          <div class="column">
+                            <img class="demo cursor" src="img/thumb_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+                          </div>
+                        </div>
+                      </div>
+                                     
+                
+                
+                </div>
+
+            </div>
+            
+        </section>
+        <!---fin galeria-->  
         
-            --nav label-->        
-         <section> 
-               <p>seccion nav</p> 
-        <nav>
-        <a href="https://www.youtube.com/watch?v=d3pcXM5wfvA">  go to youtube happy dog  </a>
-        </nav>
+        <!---RSPV-->
+        <section id="contacto">
+            <div class="container">
+                <div class="heading-padding">
+                    <h1 class="heading-padding">contacto</h1>
+                    <div class="reservation">
+                        <h2><span>tu aventura esta cerca de la luna</span>
+                        <br/>Reserva tu vuelo hoy
+                    </h2>
+                    <p class="rsvp-text">
+                        porfavor proporcionanos tu contacto 
+                    </p>
+                    <div class="form-rsvp">
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="" placeholder="nombre">
+                            <input class="rsvp" type="text" value="" placeholder="apeido">
+                            <input class="rsvp" type="text" value="" placeholder="correo electronico">
+                            <input class="rsvp" type="text" value="" placeholder="numero telefonico">
+                            <div class="form-spacer">
+                                <label class="terms">terminos y condiciones</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="enviar">
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
-           
+        <!---fin RSPV-->  
+        
+        <!--footer-->
+        <div id="footer">
+           www.estacionespacial.space &nbsp;| &nbsp; &copy; 
+        </div>
+        <!---fin footer--> 
 
-        <!--nav footer--> 
-        <section>
-                <p>seccion footer</p>
-        <div class="footer">
-  <p>Footr</p>
-</div>    
-     <footer>
-<a href="www.techacademy.com">techacademy.com</a> 
-         &nbsp;|&nbsp; &copy; 2021
-</footer>       
-
-                <!--fin de FOOTER-->  
-        </section>
     </body>
 </html>
